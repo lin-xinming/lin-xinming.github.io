@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "dakai";
+    font-display: auto;
+    src: url("../font/阿里妈妈东方大楷/Alimama_DongFangDaKai_Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "fangsong";
+    font-display: auto;
+    src: url("../font/朱雀仿宋/ZhuqueFangsong-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f2ece1;
+    overflow-x: hidden;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(227, 217, 195, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "dakai";
+}
+
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #2F4858;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #BB6946;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+#lanqiu {
+    width: 120px;
+    position: fixed !important;
+    top: 10px;
+    left: 10px;
+    z-index: 9;
+}
+
+#lanqiu:hover {
+    transform: translate(10px, 0px);
+    transform: scale(1.2);
+}
+
+#title{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/title.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part1{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/part1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part2{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/part2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part3{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/part3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article{
+    margin: 50px auto;
+    width: 72%;
+    font-family: "fangsong";
+    font-size: 20px;
+    font-weight: bold;
+    color: #2F4858;
+    text-indent: 2em;
+}
+p{
+    line-height: 2em;
+    margin-top:20px ;
+}
+.num{
+    color: #C0564A;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.highlight{
+    color: #C0564A;
+    font-weight: 900;
+}
+.container{
+    width: 72%;
+    margin: 10px auto;
+    height: 550px;
+}
+li{
+    list-style: none;
+    position: relative;
+    width: 32%;
+    height: 250px;
+    float: left;
+    margin: 5px 10px 5px 0;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* 过渡效果 */
+    transition: 0.25s ease-in;
+}
+li p{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,214,191,0.8);
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    /* 默认移出可视范围 */
+    top: -100%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "fangsong";
+    color: #2F4858;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 24px;
+}
+li:hover img{
+    /* 悬停图片变大 */
+    transform: scale(1.1);
+}
+.zhushi{
+    color: #4e6777;
+    text-align: center;
+    
+}
+.footer{
+    font-size: 15px;
+    font-weight: normal;
+    color: #987c7c;
+}
+hr{
+    width: 75%;
+    color: #987c7c;
+}
+.footer p{
+    padding: 0;
+    margin: 0;
+}
+
+
